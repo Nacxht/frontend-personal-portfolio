@@ -1,0 +1,70 @@
+<script lang="ts">
+	import { ButtonVariant } from "./variant";
+
+	export let variant: ButtonVariant = ButtonVariant.DEFAULT;
+	export let href: string | undefined = undefined;
+	export let isIcon: boolean = false;
+</script>
+
+{#if href}
+	<a {href} class="btn {variant} {isIcon ? 'btn-icon' : ''}">
+		<slot />
+	</a>
+{:else}
+	<button type="button" class="btn {variant} {isIcon ? 'btn-icon' : ''}" on:click>
+		<slot />
+	</button>
+{/if}
+
+<style lang="postcss">
+	@reference "tailwindcss";
+
+	/* button */
+	.btn {
+		@apply cursor-pointer transition-all rounded-lg px-[2rem] py-[0.5rem] font-bold
+        capitalize;
+	}
+
+	.btn-icon {
+		@apply px-[0.5rem] py-[0.5rem];
+	}
+	/*  */
+
+	/* btn-secondary */
+	:global(.light) .btn.btn-secondary {
+		@apply bg-gray-200 text-gray-950;
+	}
+
+	:global(.light) .btn.btn-secondary:hover {
+		@apply bg-gray-300;
+	}
+
+	:global(.dark) .btn.btn-secondary {
+		@apply bg-gray-800 text-white;
+	}
+
+	:global(.dark) .btn.btn-secondary:hover {
+		@apply bg-gray-900;
+	}
+
+	/*  */
+
+	/* btn-ghost */
+
+	:global(.light) .btn.btn-ghost {
+		@apply text-gray-950;
+	}
+
+	:global(.light) .btn.btn-ghost:hover {
+		@apply bg-gray-200;
+	}
+
+	:global(.dark) .btn.btn-ghost {
+		@apply text-gray-50;
+	}
+
+	:global(.dark) .btn.btn-ghost:hover {
+		@apply bg-gray-800;
+	}
+	/*  */
+</style>
