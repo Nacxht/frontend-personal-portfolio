@@ -27,6 +27,8 @@
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.7",
+		"lucide-svelte": "^0.511.0",
+		"marked": "^15.0.12",
 		"tailwindcss": "^4.1.7"
 	}
 }
