@@ -22,7 +22,7 @@
 	/* button */
 	.btn {
 		@apply cursor-pointer transition-all rounded-lg px-[2rem] py-[0.5rem] font-bold
-        capitalize;
+        capitalize flex justify-center h-fit;
 	}
 
 	.btn-icon {
