@@ -27,7 +27,7 @@
 </script>
 
 <div class="container">
-	<Button isIcon={true} variant={ButtonVariant.GHOST} on:click={toogleTheme}>
+	<Button isIcon={true} variant={ButtonVariant.OUTLINE} on:click={toogleTheme}>
 		{#if currentTheme === "light"}
 			<Moon />
 		{:else}
