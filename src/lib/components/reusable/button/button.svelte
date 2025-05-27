@@ -67,4 +67,22 @@
 		@apply bg-gray-800;
 	}
 	/*  */
+
+	/* btn-outline */
+	:global(.light) .btn.btn-outline {
+		@apply bg-gray-50 border border-gray-300 text-gray-950;
+	}
+
+	:global(.light) .btn.btn-outline:hover {
+		@apply bg-gray-300;
+	}
+
+	:global(.dark) .btn.btn-outline {
+		@apply bg-gray-950 border border-gray-800 text-gray-50;
+	}
+
+	:global(.dark) .btn.btn-outline:hover {
+		@apply bg-gray-800;
+	}
+	/*  */
 </style>
