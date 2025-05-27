@@ -18,7 +18,7 @@
 	@reference "tailwindcss";
 
 	nav {
-		@apply flex justify-between px-[30rem] py-[1rem] sticky top-0 z-[999]
+		@apply flex justify-between px-[1rem] lg:px-[30rem] py-[1rem] sticky top-0 z-[999]
 		backdrop-blur-md;
 	}
 
