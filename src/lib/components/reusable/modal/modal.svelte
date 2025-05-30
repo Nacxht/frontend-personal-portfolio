@@ -5,6 +5,7 @@
 	import { X } from "lucide-svelte";
 	import { modal } from "$lib/stores/modal";
 	import { onMount } from "svelte";
+	import { onNavigate } from "$app/navigation";
 
 	export let buttonVariant: ButtonVariant = ButtonVariant.DEFAULT;
 	export let modalTitle: string;
@@ -33,7 +34,16 @@
 	onMount(() => {
 		modal.subscribe((value) => {
 			isModalOpen = value;
-			updateHTMLClass;
+			updateHTMLClass();
+		});
+	});
+
+	onNavigate(() => {
+		closeModal();
+
+		modal.subscribe((value) => {
+			isModalOpen = value;
+			updateHTMLClass();
 		});
 	});
 </script>
@@ -43,7 +53,7 @@
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button type="button" class="modal-backdrop" on:click={closeModal}></button>
 
-		<div transition:scale={{ start: 0, duration: 300 }} class="modal-content">
+		<div transition:scale={{ start: 0, duration: 500 }} class="modal-content">
 			<div class="top-modal">
 				<p class="modal-title">
 					{modalTitle}
