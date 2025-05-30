@@ -86,4 +86,10 @@
 		@apply border-b border-gray-800;
 	}
 	/*  */
+
+	/* modal */
+	:global(.modal-on) {
+		@apply overflow-hidden;
+	}
+	/*  */
 </style>

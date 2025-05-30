@@ -10,14 +10,42 @@
 		<Home />
 	</Button>
 
-	<Modal />
+	<Modal buttonVariant={ButtonVariant.GHOST} modalTitle={"menu"}>
+		<div class="" slot="button-content">
+			<Menu />
+		</div>
+
+		<div class="menu-modal-content" slot="modal-content">
+			<Button variant={ButtonVariant.SECONDARY} href="#">
+				<p class="menu-modal-text">projects</p>
+			</Button>
+
+			<Button variant={ButtonVariant.SECONDARY} href="#">
+				<p class="menu-modal-text">educations</p>
+			</Button>
+
+			<Button variant={ButtonVariant.SECONDARY} href="#">
+				<p class="menu-modal-text">timelines</p>
+			</Button>
+
+			<Button variant={ButtonVariant.SECONDARY} href="#">
+				<p class="menu-modal-text">tech stack</p>
+			</Button>
+
+			<div class="last-menu">
+				<Button variant={ButtonVariant.SECONDARY} href="#">
+					<p class="menu-modal-text">contacts</p>
+				</Button>
+			</div>
+		</div>
+	</Modal>
 </nav>
 
 <style lang="postcss">
 	@reference "tailwindcss";
 
 	nav {
-		@apply flex justify-between px-[1rem] lg:px-[30rem] py-[1rem] sticky top-0 z-[999]
+		@apply flex justify-between px-[1rem] lg:px-[30rem] py-[1rem] sticky top-0 z-20
 		backdrop-blur-md;
 	}
 
@@ -27,5 +55,13 @@
 
 	:global(.dark) nav {
 		@apply border-b border-gray-800;
+	}
+
+	.menu-modal-content {
+		@apply grid grid-cols-2 gap-[0.5rem];
+	}
+
+	.menu-modal-content .last-menu {
+		@apply col-span-2;
 	}
 </style>

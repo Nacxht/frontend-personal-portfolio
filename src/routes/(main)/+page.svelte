@@ -138,7 +138,7 @@
 	}
 
 	#recent-projects .card-content img {
-		@apply object-cover w-[100%] h-[5rem] lg:h-[15rem] rounded-md;
+		@apply object-cover w-[100%] aspect-video rounded-md;
 	}
 
 	:global(.light) .card-content img {
