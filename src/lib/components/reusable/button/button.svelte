@@ -4,14 +4,33 @@
 	export let variant: ButtonVariant = ButtonVariant.DEFAULT;
 	export let href: string | undefined = undefined;
 	export let isIcon: boolean = false;
+
+	let isClicked: boolean = false;
+
+	function click() {
+		isClicked = true;
+
+		setTimeout(() => {
+			isClicked = false;
+		}, 100);
+	}
 </script>
 
 {#if href}
-	<a {href} class="btn {variant} {isIcon ? 'btn-icon' : ''}">
+	<a
+		{href}
+		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''}"
+		on:click={click}
+	>
 		<slot />
 	</a>
 {:else}
-	<button type="button" class="btn {variant} {isIcon ? 'btn-icon' : ''}" on:click>
+	<button
+		type="button"
+		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''}"
+		on:click
+		on:click={click}
+	>
 		<slot />
 	</button>
 {/if}
@@ -21,12 +40,16 @@
 
 	/* button */
 	.btn {
-		@apply cursor-pointer transition-all rounded-lg px-[2rem] py-[0.5rem] font-bold
+		@apply cursor-pointer transition-all rounded-md px-[2rem] py-[0.5rem] font-bold
         capitalize flex justify-center h-fit;
 	}
 
 	.btn-icon {
 		@apply px-[0.5rem] py-[0.5rem];
+	}
+
+	.btn-click {
+		@apply scale-90;
 	}
 	/*  */
 
