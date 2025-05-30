@@ -2,6 +2,7 @@
 	import Button from "../reusable/button/button.svelte";
 	import { Menu, Home } from "lucide-svelte";
 	import { ButtonVariant } from "../reusable/button/variant";
+	import Modal from "../reusable/modal/modal.svelte";
 </script>
 
 <nav>
@@ -9,9 +10,7 @@
 		<Home />
 	</Button>
 
-	<Button variant={ButtonVariant.GHOST} isIcon={true}>
-		<Menu />
-	</Button>
+	<Modal />
 </nav>
 
 <style lang="postcss">
