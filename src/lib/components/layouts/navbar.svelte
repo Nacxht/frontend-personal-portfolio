@@ -16,24 +16,24 @@
 		</div>
 
 		<div class="menu-modal-content" slot="modal-content">
-			<Button variant={ButtonVariant.SECONDARY} href="#">
+			<Button variant={ButtonVariant.SECONDARY} href="/projects">
 				<p class="menu-modal-text">projects</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} href="#">
+			<Button variant={ButtonVariant.SECONDARY} href="/educations">
 				<p class="menu-modal-text">educations</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} href="#">
+			<Button variant={ButtonVariant.SECONDARY} href="/timelines">
 				<p class="menu-modal-text">timelines</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} href="#">
+			<Button variant={ButtonVariant.SECONDARY} href="/techstack">
 				<p class="menu-modal-text">tech stack</p>
 			</Button>
 
 			<div class="last-menu">
-				<Button variant={ButtonVariant.SECONDARY} href="#">
+				<Button variant={ButtonVariant.SECONDARY} href="/contacts">
 					<p class="menu-modal-text">contacts</p>
 				</Button>
 			</div>
