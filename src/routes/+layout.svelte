@@ -37,6 +37,10 @@
 	:global(main) {
 		@apply mx-[1rem] lg:mx-[20rem] my-[1rem] grid gap-[2rem];
 	}
+
+	:global(section) {
+		@apply grid gap-[1.5rem];
+	}
 	/*  */
 
 	/* typography */
