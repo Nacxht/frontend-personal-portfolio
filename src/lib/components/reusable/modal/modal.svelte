@@ -53,7 +53,7 @@
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button type="button" class="modal-backdrop" on:click={closeModal}></button>
 
-		<div transition:scale={{ start: 0, duration: 500 }} class="modal-content">
+		<div transition:scale={{ start: 0, duration: 300 }} class="modal-content">
 			<div class="top-modal">
 				<p class="modal-title">
 					{modalTitle}
@@ -89,7 +89,7 @@
 
 	.modal-content {
 		@apply absolute p-[1rem] z-40 w-fit min-w-1/4 rounded-md
-		grid gap-[0.5rem];
+		grid gap-[0.5rem] mx-[1rem];
 	}
 
 	:global(.light) .modal-content {
