@@ -121,10 +121,6 @@
 <style lang="postcss">
 	@reference "tailwindcss";
 
-	section {
-		@apply grid gap-[1.5rem];
-	}
-
 	#service .button {
 		@apply w-[10rem];
 	}
