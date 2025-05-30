@@ -35,11 +35,12 @@
 
 	/* page layout */
 	:global(main) {
-		@apply mx-[1rem] lg:mx-[20rem] my-[1rem] grid gap-[2rem];
+		@apply mx-[1rem] lg:mx-[20rem] my-[1rem] grid gap-[2rem]
+		min-h-[90dvh];
 	}
 
 	:global(section) {
-		@apply grid gap-[1.5rem];
+		@apply grid gap-[1.5rem] h-fit;
 	}
 	/*  */
 
