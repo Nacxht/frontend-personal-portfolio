@@ -119,10 +119,6 @@
 <style lang="postcss">
 	@reference "tailwindcss";
 
-	#recent-projects #button-service-text {
-		@apply w-full;
-	}
-
 	#recent-projects .projects-grid {
 		@apply grid grid-cols-2 gap-[0.5rem];
 	}
