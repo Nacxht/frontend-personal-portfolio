@@ -5,13 +5,14 @@
 
 	export let totalPage: number = 1;
 	export let currentPage: number = 1;
+	export let withOutline: boolean = false;
 
 	function updateSelectedButton(num: number) {
 		currentPage = num;
 	}
 </script>
 
-<div class="pagination">
+<div class="pagination {withOutline ? 'pagination-outline' : ''}">
 	<Button variant={ButtonVariant.GHOST}>
 		<div class="button-content">
 			<ChevronLeft />
@@ -52,7 +53,15 @@
 	@reference "tailwindcss";
 
 	.pagination {
-		@apply flex gap-[1rem];
+		@apply flex gap-[1rem] p-[0.5rem] w-fit rounded-md;
+	}
+
+	:global(.light) .pagination.pagination-outline {
+		@apply border border-gray-300;
+	}
+
+	:global(.dark) .pagination.pagination-outline {
+		@apply border border-gray-800;
 	}
 
 	.button-content {
