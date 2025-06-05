@@ -5,8 +5,6 @@
 	import TextNumber from "$lib/components/reusable/input/text-number/text-number.svelte";
 	import { TextNumberVariant } from "$lib/components/reusable/input/text-number/variant";
 	import Pagination from "$lib/components/reusable/pagination/pagination.svelte";
-
-	//
 </script>
 
 <main>
