@@ -5,6 +5,7 @@
 	export let href: string | undefined = undefined;
 	export let isIcon: boolean = false;
 	export let isWidthFit: boolean = true;
+	export let isDisable: boolean = false;
 
 	let isClicked: boolean = false;
 
@@ -17,7 +18,17 @@
 	}
 </script>
 
-{#if href}
+{#if isDisable}
+	<button
+		type="button"
+		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''}"
+		on:click
+		on:click={click}
+		disabled
+	>
+		<slot />
+	</button>
+{:else if href}
 	<a
 		{href}
 		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''} {isWidthFit
