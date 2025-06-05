@@ -10,15 +10,26 @@
 	function updateSelectedButton(num: number) {
 		currentPage = num;
 	}
+
+	function previousButton() {
+		currentPage -= 1;
+	}
+
+	function nextButton() {
+		currentPage += 1;
+	}
 </script>
 
 <div class="pagination {withOutline ? 'pagination-outline' : ''}">
-	<Button variant={ButtonVariant.GHOST}>
-		<div class="button-content">
+	{#if currentPage === 1}
+		<Button variant={ButtonVariant.GHOST} isIcon={true} isDisable={true}>
 			<ChevronLeft />
-			Previous
-		</div>
-	</Button>
+		</Button>
+	{:else}
+		<Button variant={ButtonVariant.GHOST} isIcon={true} on:click={previousButton}>
+			<ChevronLeft />
+		</Button>
+	{/if}
 
 	{#each Array.from({ length: totalPage }, (v, i) => i + 1) as i}
 		{#if i == currentPage}
@@ -41,19 +52,22 @@
 		{/if}
 	{/each}
 
-	<Button variant={ButtonVariant.GHOST}>
-		<div class="button-content">
-			Next
+	{#if currentPage === totalPage}
+		<Button variant={ButtonVariant.GHOST} isIcon={true} isDisable={true}>
 			<ChevronRight />
-		</div>
-	</Button>
+		</Button>
+	{:else}
+		<Button variant={ButtonVariant.GHOST} isIcon={true} on:click={nextButton}>
+			<ChevronRight />
+		</Button>
+	{/if}
 </div>
 
 <style lang="postcss">
 	@reference "tailwindcss";
 
 	.pagination {
-		@apply flex gap-[1rem] p-[0.5rem] w-fit rounded-md;
+		@apply flex gap-[1rem] p-[0.5rem] w-fit max-w-screen rounded-md items-center;
 	}
 
 	:global(.light) .pagination.pagination-outline {
@@ -62,10 +76,6 @@
 
 	:global(.dark) .pagination.pagination-outline {
 		@apply border border-gray-800;
-	}
-
-	.button-content {
-		@apply flex items-center;
 	}
 
 	.button-number-content {
