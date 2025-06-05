@@ -55,7 +55,8 @@
 	/* button */
 	.btn {
 		@apply cursor-pointer transition-all rounded-md px-[2rem] py-[0.5rem] font-bold
-        capitalize flex justify-center h-fit text-sm lg:text-lg w-fit;
+        capitalize flex justify-center h-fit text-sm lg:text-lg w-fit
+		disabled:cursor-not-allowed;
 	}
 
 	.btn-icon {
