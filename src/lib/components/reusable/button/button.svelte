@@ -4,6 +4,7 @@
 	export let variant: ButtonVariant = ButtonVariant.DEFAULT;
 	export let href: string | undefined = undefined;
 	export let isIcon: boolean = false;
+	export let isWidthFit: boolean = true;
 
 	let isClicked: boolean = false;
 
@@ -19,7 +20,9 @@
 {#if href}
 	<a
 		{href}
-		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''}"
+		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''} {isWidthFit
+			? 'btn-fit'
+			: 'btn-full'}"
 		on:click={click}
 	>
 		<slot />
@@ -41,7 +44,7 @@
 	/* button */
 	.btn {
 		@apply cursor-pointer transition-all rounded-md px-[2rem] py-[0.5rem] font-bold
-        capitalize flex justify-center h-fit;
+        capitalize flex justify-center h-fit text-sm lg:text-lg w-fit;
 	}
 
 	.btn-icon {
@@ -50,6 +53,10 @@
 
 	.btn-click {
 		@apply scale-90;
+	}
+
+	.btn-full {
+		@apply w-full;
 	}
 	/*  */
 

@@ -16,24 +16,24 @@
 		</div>
 
 		<div class="menu-modal-content" slot="modal-content">
-			<Button variant={ButtonVariant.SECONDARY} href="/projects">
+			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/projects">
 				<p class="menu-modal-text">projects</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} href="/educations">
+			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/educations">
 				<p class="menu-modal-text">educations</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} href="/timelines">
+			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/timelines">
 				<p class="menu-modal-text">timelines</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} href="/techstack">
+			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/techstack">
 				<p class="menu-modal-text">tech stack</p>
 			</Button>
 
 			<div class="last-menu">
-				<Button variant={ButtonVariant.SECONDARY} href="/contacts">
+				<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/contacts">
 					<p class="menu-modal-text">contacts</p>
 				</Button>
 			</div>

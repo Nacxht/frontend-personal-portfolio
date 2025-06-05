@@ -93,7 +93,7 @@
 			</Card>
 		</div>
 
-		<Button variant={ButtonVariant.SECONDARY} href="/projects">show more</Button>
+		<Button variant={ButtonVariant.SECONDARY} href="/projects" isWidthFit={false}>show more</Button>
 	</section>
 
 	<hr class="divider" />
@@ -112,17 +112,15 @@
 			assumenda neque culpa. Sit, ab vel fuga corrupti consectetur deserunt.
 		</p>
 
-		<div class="button">
-			<Button href="/" variant={ButtonVariant.SECONDARY}>contact me</Button>
-		</div>
+		<Button href="/" variant={ButtonVariant.SECONDARY}>contact me</Button>
 	</section>
 </main>
 
 <style lang="postcss">
 	@reference "tailwindcss";
 
-	#service .button {
-		@apply w-[10rem];
+	#recent-projects #button-service-text {
+		@apply w-full;
 	}
 
 	#recent-projects .projects-grid {
