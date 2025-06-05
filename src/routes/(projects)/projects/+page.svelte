@@ -4,6 +4,7 @@
 	import Card from "$lib/components/reusable/card/card.svelte";
 	import TextNumber from "$lib/components/reusable/input/text-number/text-number.svelte";
 	import { TextNumberVariant } from "$lib/components/reusable/input/text-number/variant";
+	import Pagination from "$lib/components/reusable/pagination/pagination.svelte";
 
 	//
 </script>
@@ -98,6 +99,10 @@
 				</div>
 			</Card>
 		</div>
+
+		<div class="project-pagination">
+			<Pagination totalPage={3} withOutline={true} />
+		</div>
 	</section>
 </main>
 
@@ -142,5 +147,9 @@
 
 	:global(.dark) #projects .card-content p {
 		@apply text-gray-50;
+	}
+
+	#projects .project-pagination {
+		@apply flex justify-center;
 	}
 </style>
