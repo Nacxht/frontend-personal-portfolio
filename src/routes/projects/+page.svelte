@@ -8,101 +8,103 @@
 </script>
 
 <main>
-	<section class="page-title">
-		<h1>projects</h1>
-		<hr class="divider" />
-	</section>
+	<div class="container">
+		<section class="page-title">
+			<h1>projects</h1>
+			<hr class="divider" />
+		</section>
 
-	<section id="projects">
-		<div class="search-input">
-			<TextNumber
-				type={TextNumberVariant.TEXT}
-				name="search"
-				id="search"
-				width="w-full lg:w-[20rem]"
-				placeholder="Search projects..."
-			/>
-			<Button variant={ButtonVariant.SECONDARY}>Search</Button>
-		</div>
+		<section id="projects">
+			<div class="search-input">
+				<TextNumber
+					type={TextNumberVariant.TEXT}
+					name="search"
+					id="search"
+					width="w-full lg:w-[20rem]"
+					placeholder="Search projects..."
+				/>
+				<Button variant={ButtonVariant.SECONDARY}>Search</Button>
+			</div>
 
-		<div class="projects-grid">
-			<Card href="/">
-				<div class="card-content">
-					<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
+			<div class="projects-grid">
+				<Card href="/">
+					<div class="card-content">
+						<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
 
-					<hr class="divider" />
+						<hr class="divider" />
 
-					<div class="project-title">
-						<p>lorem ipsum</p>
+						<div class="project-title">
+							<p>lorem ipsum</p>
+						</div>
 					</div>
-				</div>
-			</Card>
+				</Card>
 
-			<Card href="/">
-				<div class="card-content">
-					<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
+				<Card href="/">
+					<div class="card-content">
+						<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
 
-					<hr class="divider" />
+						<hr class="divider" />
 
-					<div class="project-title">
-						<p>lorem ipsum</p>
+						<div class="project-title">
+							<p>lorem ipsum</p>
+						</div>
 					</div>
-				</div>
-			</Card>
+				</Card>
 
-			<Card href="/">
-				<div class="card-content">
-					<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
+				<Card href="/">
+					<div class="card-content">
+						<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
 
-					<hr class="divider" />
+						<hr class="divider" />
 
-					<div class="project-title">
-						<p>lorem ipsum</p>
+						<div class="project-title">
+							<p>lorem ipsum</p>
+						</div>
 					</div>
-				</div>
-			</Card>
+				</Card>
 
-			<Card href="/">
-				<div class="card-content">
-					<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
+				<Card href="/">
+					<div class="card-content">
+						<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
 
-					<hr class="divider" />
+						<hr class="divider" />
 
-					<div class="project-title">
-						<p>lorem ipsum</p>
+						<div class="project-title">
+							<p>lorem ipsum</p>
+						</div>
 					</div>
-				</div>
-			</Card>
+				</Card>
 
-			<Card href="/">
-				<div class="card-content">
-					<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
+				<Card href="/">
+					<div class="card-content">
+						<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
 
-					<hr class="divider" />
+						<hr class="divider" />
 
-					<div class="project-title">
-						<p>lorem ipsum</p>
+						<div class="project-title">
+							<p>lorem ipsum</p>
+						</div>
 					</div>
-				</div>
-			</Card>
+				</Card>
 
-			<Card href="/">
-				<div class="card-content">
-					<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
+				<Card href="/">
+					<div class="card-content">
+						<img src="https://picsum.photos/1280/720" alt="lorem-ipsum" />
 
-					<hr class="divider" />
+						<hr class="divider" />
 
-					<div class="project-title">
-						<p>lorem ipsum</p>
+						<div class="project-title">
+							<p>lorem ipsum</p>
+						</div>
 					</div>
-				</div>
-			</Card>
-		</div>
+				</Card>
+			</div>
 
-		<div class="project-pagination">
-			<Pagination totalPage={3} withOutline={true} />
-		</div>
-	</section>
+			<div class="project-pagination">
+				<Pagination totalPage={3} withOutline={true} />
+			</div>
+		</section>
+	</div>
 </main>
 
 <style lang="postcss">
