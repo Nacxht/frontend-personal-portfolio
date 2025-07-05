@@ -23,6 +23,12 @@
 	}
 	/*  */
 
+	/* all element */
+	:global(*) {
+		@apply transition-colors ease-in-out duration-300;
+	}
+	/*  */
+
 	/* body */
 	:global(body) {
 		@apply bg-gray-50;
