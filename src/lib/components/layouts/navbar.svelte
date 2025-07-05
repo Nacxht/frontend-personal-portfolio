@@ -24,8 +24,8 @@
 				<p class="menu-modal-text">educations</p>
 			</Button>
 
-			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/timelines">
-				<p class="menu-modal-text">timelines</p>
+			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/experiences">
+				<p class="menu-modal-text">experiences</p>
 			</Button>
 
 			<Button variant={ButtonVariant.SECONDARY} isWidthFit={false} href="/techstack">
