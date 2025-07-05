@@ -8,11 +8,12 @@
 </script>
 
 <main>
-	<section id="projects">
+	<section class="page-title">
 		<h1>projects</h1>
-
 		<hr class="divider" />
+	</section>
 
+	<section id="projects">
 		<div class="search-input">
 			<TextNumber
 				type={TextNumberVariant.TEXT}
