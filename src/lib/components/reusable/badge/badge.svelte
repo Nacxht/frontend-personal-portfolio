@@ -3,9 +3,14 @@
 
 	export let variant: BadgeVariant = BadgeVariant.DEFAULT;
 	export let href: string | undefined = undefined;
+	export let customColor: string | undefined = undefined;
 </script>
 
-<svelte:element this={href ? "a" : "span"} {href} class="badge {variant}">
+<svelte:element
+	this={href ? "a" : "span"}
+	{href}
+	class="badge {variant === BadgeVariant.CUSTOM ? customColor : variant}"
+>
 	<slot />
 </svelte:element>
 

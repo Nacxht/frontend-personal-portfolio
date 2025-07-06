@@ -2,5 +2,6 @@ export enum BadgeVariant {
 	DEFAULT = "badge-default",
 	SECONDARY = "badge-secondary",
 	OUTLINE = "badge-outline",
-	DESTRUCTIVE = "badge-destructive"
+	DESTRUCTIVE = "badge-destructive",
+	CUSTOM = "badge-custom"
 }
