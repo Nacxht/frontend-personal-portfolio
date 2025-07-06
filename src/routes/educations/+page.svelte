@@ -4,7 +4,7 @@
 
 <main>
 	<div class="container">
-		<section class="title">
+		<section id="title">
 			<h1>educations</h1>
 		</section>
 

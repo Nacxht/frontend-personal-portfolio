@@ -11,21 +11,22 @@
 	<div class="container">
 		<section class="page-title">
 			<h1>projects</h1>
-			<hr class="divider" />
+		</section>
+
+		<hr class="divider" />
+
+		<section id="search-input">
+			<TextNumber
+				type={TextNumberVariant.TEXT}
+				name="search"
+				id="search"
+				width="w-full lg:w-[20rem]"
+				placeholder="Search projects..."
+			/>
+			<Button variant={ButtonVariant.SECONDARY}>Search</Button>
 		</section>
 
 		<section id="projects">
-			<div class="search-input">
-				<TextNumber
-					type={TextNumberVariant.TEXT}
-					name="search"
-					id="search"
-					width="w-full lg:w-[20rem]"
-					placeholder="Search projects..."
-				/>
-				<Button variant={ButtonVariant.SECONDARY}>Search</Button>
-			</div>
-
 			<div class="projects-grid">
 				<Card href="/">
 					<div class="card-content">
@@ -110,7 +111,7 @@
 <style lang="postcss">
 	@reference "tailwindcss";
 
-	#projects .search-input {
+	#search-input {
 		@apply flex items-center gap-[0.5rem];
 	}
 
