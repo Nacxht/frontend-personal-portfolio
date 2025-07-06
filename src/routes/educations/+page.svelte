@@ -1,5 +1,5 @@
 <script>
-	import Steps from "$lib/components/reusable/steps/steps.svelte";
+	import EducationStep from "$lib/components/pages/educations/education-step.svelte";
 </script>
 
 <main>
@@ -12,7 +12,7 @@
 
 		<section id="educations">
 			<div class="step">
-				<Steps title={"School at SMK Krian 1"} date={"2019 - 2023"}>
+				<EducationStep title={"School at SMK Krian 1"} date={"2019 - 2023"}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque reprehenderit vero
 					culpa. Eos alias aliquid quam numquam ipsum sapiente fugit repellendus distinctio atque
 					officiis corporis rem porro doloremque laudantium commodi repellat reiciendis molestias,
@@ -22,11 +22,11 @@
 					necessitatibus voluptatibus illo odio. Quas asperiores quod similique vero exercitationem
 					corrupti, recusandae esse dolore accusamus odit deserunt rerum nam suscipit nulla neque
 					harum sed quaerat quia illo assumenda ipsam minus. Perspiciatis?
-				</Steps>
+				</EducationStep>
 			</div>
 
 			<div class="step">
-				<Steps title={"School at SMK Krian 1"} date={"2019 - 2023"}>
+				<EducationStep title={"School at SMK Krian 1"} date={"2019 - 2023"}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque reprehenderit vero
 					culpa. Eos alias aliquid quam numquam ipsum sapiente fugit repellendus distinctio atque
 					officiis corporis rem porro doloremque laudantium commodi repellat reiciendis molestias,
@@ -36,11 +36,11 @@
 					necessitatibus voluptatibus illo odio. Quas asperiores quod similique vero exercitationem
 					corrupti, recusandae esse dolore accusamus odit deserunt rerum nam suscipit nulla neque
 					harum sed quaerat quia illo assumenda ipsam minus. Perspiciatis?
-				</Steps>
+				</EducationStep>
 			</div>
 
 			<div class="step">
-				<Steps title={"School at SMK Krian 1"} date={"2019 - 2023"}>
+				<EducationStep title={"School at SMK Krian 1"} date={"2019 - 2023"}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque reprehenderit vero
 					culpa. Eos alias aliquid quam numquam ipsum sapiente fugit repellendus distinctio atque
 					officiis corporis rem porro doloremque laudantium commodi repellat reiciendis molestias,
@@ -50,11 +50,11 @@
 					necessitatibus voluptatibus illo odio. Quas asperiores quod similique vero exercitationem
 					corrupti, recusandae esse dolore accusamus odit deserunt rerum nam suscipit nulla neque
 					harum sed quaerat quia illo assumenda ipsam minus. Perspiciatis?
-				</Steps>
+				</EducationStep>
 			</div>
 
 			<div class="step">
-				<Steps title={"School at SMK Krian 1"} date={"2019 - 2023"}>
+				<EducationStep title={"School at SMK Krian 1"} date={"2019 - 2023"}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque reprehenderit vero
 					culpa. Eos alias aliquid quam numquam ipsum sapiente fugit repellendus distinctio atque
 					officiis corporis rem porro doloremque laudantium commodi repellat reiciendis molestias,
@@ -64,7 +64,7 @@
 					necessitatibus voluptatibus illo odio. Quas asperiores quod similique vero exercitationem
 					corrupti, recusandae esse dolore accusamus odit deserunt rerum nam suscipit nulla neque
 					harum sed quaerat quia illo assumenda ipsam minus. Perspiciatis?
-				</Steps>
+				</EducationStep>
 			</div>
 		</section>
 	</div>

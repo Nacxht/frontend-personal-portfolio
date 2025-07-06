@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from "../card/card.svelte";
+	import Card from "$lib/components/reusable/card/card.svelte";
 
 	export let title: string;
 	export let date: string;
