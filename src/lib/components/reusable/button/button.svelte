@@ -55,7 +55,7 @@
 	/* button */
 	.btn {
 		@apply cursor-pointer transition-all rounded-md px-[2rem] py-[0.5rem] font-bold
-        capitalize flex justify-center h-fit text-sm lg:text-lg w-fit
+        capitalize flex justify-center h-fit text-sm lg:text-base w-fit
 		disabled:cursor-not-allowed;
 	}
 
@@ -88,11 +88,9 @@
 	:global(.dark) .btn.btn-secondary:hover {
 		@apply bg-gray-900;
 	}
-
 	/*  */
 
 	/* btn-ghost */
-
 	:global(.light) .btn.btn-ghost {
 		@apply text-gray-950;
 	}
