@@ -100,10 +100,10 @@
 					</div>
 				</Card>
 			</div>
+		</section>
 
-			<div class="project-pagination">
-				<Pagination totalPage={3} withOutline={true} />
-			</div>
+		<section id="project-pagination">
+			<Pagination totalPage={3} withOutline={true} />
 		</section>
 	</div>
 </main>
@@ -151,7 +151,7 @@
 		@apply text-gray-50;
 	}
 
-	#projects .project-pagination {
+	#project-pagination {
 		@apply flex justify-center;
 	}
 </style>
