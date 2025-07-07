@@ -47,7 +47,6 @@
 
 	.container .techstack-grid {
 		@apply flex flex-wrap gap-[1rem];
-		/* @apply grid grid-cols-8 gap-[1rem] justify-items-center; */
 	}
 
 	.container .techstack-grid .tech {
