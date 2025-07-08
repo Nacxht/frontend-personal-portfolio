@@ -20,15 +20,12 @@
 	@reference "tailwindcss";
 
 	footer {
-		@apply grid gap-[2rem] py-[2rem] px-[1rem] lg:px-[10rem];
+		@apply grid gap-[2rem] py-[2rem] px-[1rem] lg:px-[10rem]
+		border-t border-gray-800 transition-all ease-in-out;
 	}
 
 	:global(.light) footer {
-		@apply border-t border-gray-300;
-	}
-
-	:global(.dark) footer {
-		@apply border-t border-gray-800;
+		@apply border-gray-300;
 	}
 
 	.up-content {
@@ -36,15 +33,12 @@
 	}
 
 	.up-content .nickname {
-		@apply text-lg lg:text-2xl font-bold uppercase;
+		@apply text-lg lg:text-2xl font-bold uppercase
+		transition-all ease-in-out text-gray-50;
 	}
 
 	:global(.light) .up-content .nickname {
 		@apply text-gray-950;
-	}
-
-	:global(.dark) .up-content .nickname {
-		@apply text-gray-50;
 	}
 
 	.up-content .purpose {

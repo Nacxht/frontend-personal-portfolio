@@ -67,15 +67,12 @@
 	@reference "tailwindcss";
 
 	.pagination {
-		@apply flex gap-[1rem] p-[0.5rem] w-fit max-w-screen rounded-md items-center;
+		@apply flex gap-[1rem] p-[0.5rem] w-fit max-w-screen rounded-md items-center
+		border border-gray-800 transition-all ease-in-out;
 	}
 
 	:global(.light) .pagination.pagination-outline {
-		@apply border border-gray-300;
-	}
-
-	:global(.dark) .pagination.pagination-outline {
-		@apply border border-gray-800;
+		@apply border-gray-300;
 	}
 
 	.button-number-content {

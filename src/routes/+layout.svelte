@@ -25,7 +25,7 @@
 
 	/* body */
 	:global(body) {
-		@apply bg-gray-50 transition-colors ease-in-out;
+		@apply bg-gray-50 transition-all ease-in-out;
 	}
 
 	:global(.dark body) {
@@ -49,15 +49,18 @@
 
 	/* typography */
 	:global(h1) {
-		@apply font-bold uppercase text-3xl lg:text-4xl;
+		@apply font-bold uppercase text-3xl lg:text-4xl
+		transition-all ease-in-out;
 	}
 
 	:global(h2) {
-		@apply font-bold capitalize text-2xl lg:text-3xl;
+		@apply font-bold capitalize text-2xl lg:text-3xl
+		transition-all ease-in-out;
 	}
 
 	:global(h3) {
-		@apply font-bold capitalize text-xl lg:text-2xl;
+		@apply font-bold capitalize text-xl lg:text-2xl
+		transition-all ease-in-out;
 	}
 
 	:global(.light h1),
@@ -73,29 +76,21 @@
 	}
 
 	:global(p) {
-		@apply text-justify;
+		@apply text-justify transition-all ease-in-out text-gray-400;
 	}
 
 	:global(.light p) {
 		@apply text-gray-600;
 	}
-
-	:global(.dark p) {
-		@apply text-gray-400;
-	}
-
-	:global(h1, h2, h3, h4, h5, h6, p) {
-		@apply transition-all ease-in-out;
-	}
 	/*  */
 
 	/* hr divider */
-	:global(.light .divider) {
-		@apply border-b border-gray-300;
+	:global(.divider) {
+		@apply border-b border-gray-800 transition-all ease-in-out;
 	}
 
-	:global(.dark .divider) {
-		@apply border-b border-gray-800;
+	:global(.light .divider) {
+		@apply border-gray-300;
 	}
 	/*  */
 

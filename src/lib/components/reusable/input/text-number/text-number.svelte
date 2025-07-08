@@ -33,14 +33,11 @@
 	@reference "tailwindcss";
 
 	input {
-		@apply text-xs lg:text-sm p-[0.7rem] lg:p-[0.5rem] rounded-md h-fit;
+		@apply text-xs lg:text-sm p-[0.7rem] lg:p-[0.5rem] rounded-md h-fit
+		border border-gray-800 text-gray-50 transition-all ease-in-out;
 	}
 
 	:global(.light) input {
-		@apply text-gray-950 border border-gray-300;
-	}
-
-	:global(.dark) input {
-		@apply text-white border border-gray-800;
+		@apply text-gray-950 border-gray-300;
 	}
 </style>

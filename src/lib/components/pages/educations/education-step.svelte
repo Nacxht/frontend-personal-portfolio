@@ -30,7 +30,8 @@
 	@reference "tailwindcss";
 
 	.step {
-		@apply relative border-l-2 border-gray-800 pl-[2rem] mx-[0.5rem] md:mx-0;
+		@apply relative border-l-2 border-gray-800 pl-[2rem] mx-[0.5rem]
+		md:mx-0 transition-all ease-in-out;
 	}
 
 	:global(.light) .step {
@@ -38,7 +39,8 @@
 	}
 
 	.step .line {
-		@apply absolute aspect-square w-[1.5rem] rounded-full bg-gray-800 left-[-0.8rem];
+		@apply absolute aspect-square w-[1.5rem] rounded-full bg-gray-800 
+		left-[-0.8rem] transition-all ease-in-out;
 	}
 
 	:global(.light) .step .line {

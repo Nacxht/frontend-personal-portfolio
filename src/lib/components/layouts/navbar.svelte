@@ -46,15 +46,11 @@
 
 	nav {
 		@apply flex justify-between px-[1rem] lg:px-[30rem] py-[1rem] sticky top-0 z-20
-		backdrop-blur-md;
+		backdrop-blur-md transition-all ease-in-out border-b border-gray-800;
 	}
 
 	:global(.light) nav {
-		@apply border-b border-gray-400;
-	}
-
-	:global(.dark) nav {
-		@apply border-b border-gray-800;
+		@apply border-gray-400;
 	}
 
 	.menu-modal-content {

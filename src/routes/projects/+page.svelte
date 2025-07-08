@@ -124,15 +124,12 @@
 	}
 
 	#projects .card-content img {
-		@apply object-cover w-[100%] aspect-video rounded-md;
+		@apply object-cover w-[100%] aspect-video rounded-md
+		border-2 border-gray-800 transition-all ease-in-out;
 	}
 
 	:global(.light) .card-content img {
-		@apply border-2 border-gray-300;
-	}
-
-	:global(.dark) .card-content img {
-		@apply border-2 border-gray-800;
+		@apply border-gray-300;
 	}
 
 	#projects .card-content .project-title {
@@ -140,15 +137,12 @@
 	}
 
 	#projects .card-content p {
-		@apply text-xs lg:text-lg capitalize font-bold;
+		@apply text-xs lg:text-lg capitalize font-bold
+		text-gray-50 transition-all ease-in-out;
 	}
 
 	:global(.light) #projects .card-content p {
 		@apply text-gray-950;
-	}
-
-	:global(.dark) #projects .card-content p {
-		@apply text-gray-50;
 	}
 
 	#project-pagination {

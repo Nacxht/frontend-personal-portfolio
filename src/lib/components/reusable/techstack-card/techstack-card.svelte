@@ -29,7 +29,7 @@
 
 	.container {
 		@apply border border-gray-800 rounded-md p-[1.5rem] grid
-        gap-[1rem];
+        gap-[1rem] transition-all ease-in-out;
 	}
 
 	:global(.light) .container {
@@ -51,7 +51,8 @@
 
 	.container .techstack-grid .tech {
 		@apply aspect-square bg-gray-800 text-white w-[3.5rem] p-[0.5rem]
-        rounded-md flex justify-center items-center mx-auto;
+        rounded-md flex justify-center items-center mx-auto transition-all
+		ease-in-out;
 	}
 
 	:global(.light) .container .techstack-grid .tech {
