@@ -23,6 +23,14 @@
 	}
 
 	/* badge-primary */
+	.badge.badge-default {
+		@apply bg-gray-50 text-gray-950;
+	}
+
+	.badge.badge-default:hover {
+		@apply bg-gray-400;
+	}
+
 	:global(.light) .badge.badge-default {
 		@apply bg-gray-950 text-gray-50;
 	}
@@ -30,31 +38,23 @@
 	:global(.light) .badge.badge-default:hover {
 		@apply opacity-70;
 	}
-
-	:global(.dark) .badge.badge-default {
-		@apply bg-gray-50 text-gray-950;
-	}
-
-	:global(.dark) .badge.badge-default:hover {
-		@apply bg-gray-400;
-	}
 	/*  */
 
 	/* badge-secondary */
+	.badge.badge-secondary {
+		@apply bg-gray-800 text-gray-50;
+	}
+
+	.badge.badge-secondary:hover {
+		@apply bg-gray-900;
+	}
+
 	:global(.light) .badge.badge-secondary {
 		@apply bg-gray-200 text-gray-950;
 	}
 
 	:global(.light) .badge.badge-secondary:hover {
 		@apply bg-gray-300;
-	}
-
-	:global(.dark) .badge.badge-secondary {
-		@apply bg-gray-800 text-gray-50;
-	}
-
-	:global(.dark) .badge.badge-secondary:hover {
-		@apply bg-gray-900;
 	}
 	/*  */
 </style>

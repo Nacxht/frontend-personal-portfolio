@@ -92,6 +92,14 @@
 	/*  */
 
 	/* btn-secondary */
+	.btn.btn-secondary {
+		@apply bg-gray-800 text-white;
+	}
+
+	.btn.btn-secondary:hover {
+		@apply bg-gray-900;
+	}
+
 	:global(.light) .btn.btn-secondary {
 		@apply bg-gray-200 text-gray-950;
 	}
@@ -99,17 +107,17 @@
 	:global(.light) .btn.btn-secondary:hover {
 		@apply bg-gray-300;
 	}
-
-	:global(.dark) .btn.btn-secondary {
-		@apply bg-gray-800 text-white;
-	}
-
-	:global(.dark) .btn.btn-secondary:hover {
-		@apply bg-gray-900;
-	}
 	/*  */
 
 	/* btn-ghost */
+	.btn.btn-ghost {
+		@apply text-gray-50;
+	}
+
+	.btn.btn-ghost:hover {
+		@apply bg-gray-800;
+	}
+
 	:global(.light) .btn.btn-ghost {
 		@apply text-gray-950;
 	}
@@ -117,31 +125,23 @@
 	:global(.light) .btn.btn-ghost:hover {
 		@apply bg-gray-200;
 	}
-
-	:global(.dark) .btn.btn-ghost {
-		@apply text-gray-50;
-	}
-
-	:global(.dark) .btn.btn-ghost:hover {
-		@apply bg-gray-800;
-	}
 	/*  */
 
 	/* btn-outline */
+	.btn.btn-outline {
+		@apply bg-gray-950 border border-gray-800 text-gray-50;
+	}
+
+	.btn.btn-outline:hover {
+		@apply bg-gray-800;
+	}
+
 	:global(.light) .btn.btn-outline {
-		@apply bg-gray-50 border border-gray-300 text-gray-950;
+		@apply bg-gray-50 border-gray-300 text-gray-950;
 	}
 
 	:global(.light) .btn.btn-outline:hover {
 		@apply bg-gray-300;
-	}
-
-	:global(.dark) .btn.btn-outline {
-		@apply bg-gray-950 border border-gray-800 text-gray-50;
-	}
-
-	:global(.dark) .btn.btn-outline:hover {
-		@apply bg-gray-800;
 	}
 	/*  */
 

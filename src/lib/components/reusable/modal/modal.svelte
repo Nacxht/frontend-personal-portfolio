@@ -89,15 +89,11 @@
 
 	.modal-content {
 		@apply absolute p-[1rem] z-40 w-fit min-w-1/4 rounded-md
-		grid gap-[0.5rem] mx-[1rem];
+		grid gap-[0.5rem] mx-[1rem] bg-gray-950 border border-gray-800;
 	}
 
 	:global(.light) .modal-content {
 		@apply bg-gray-50 border border-gray-300;
-	}
-
-	:global(.dark) .modal-content {
-		@apply bg-gray-950 border border-gray-800;
 	}
 
 	.modal-content .top-modal {
