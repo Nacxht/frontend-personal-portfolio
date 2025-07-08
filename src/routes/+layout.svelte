@@ -25,7 +25,7 @@
 
 	/* body */
 	:global(body) {
-		@apply bg-gray-50 transition-colors ease-in-out duration-100;
+		@apply bg-gray-50 transition-colors ease-in-out;
 	}
 
 	:global(.dark body) {
@@ -82,6 +82,10 @@
 
 	:global(.dark p) {
 		@apply text-gray-400;
+	}
+
+	:global(h1, h2, h3, h4, h5, h6, p) {
+		@apply transition-all ease-in-out;
 	}
 	/*  */
 
