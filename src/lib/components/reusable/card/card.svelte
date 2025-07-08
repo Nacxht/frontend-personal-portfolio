@@ -11,7 +11,11 @@
 
 	.card {
 		@apply p-[0.5rem] lg:p-[1rem] rounded-md transition-all ease-in-out
-		border border-gray-900 bg-gray-950;
+		border border-gray-800 bg-gray-950;
+	}
+
+	.card:hover {
+		@apply bg-gray-900;
 	}
 
 	:global(.light) .card {
