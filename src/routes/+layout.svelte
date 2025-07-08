@@ -25,7 +25,7 @@
 
 	/* body */
 	:global(body) {
-		@apply bg-gray-50 transition-colors ease-in-out duration-300;
+		@apply bg-gray-50 transition-colors ease-in-out duration-100;
 	}
 
 	:global(.dark body) {
