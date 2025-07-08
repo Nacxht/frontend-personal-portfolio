@@ -82,6 +82,14 @@
 	:global(.light p) {
 		@apply text-gray-600;
 	}
+
+	:global(label) {
+		@apply text-gray-50 transition-all ease-in-out;
+	}
+
+	:global(.light label) {
+		@apply text-gray-950;
+	}
 	/*  */
 
 	/* hr divider */
