@@ -6,6 +6,7 @@
 	export let isIcon: boolean = false;
 	export let isWidthFit: boolean = true;
 	export let isDisable: boolean = false;
+	export let type: "button" | "reset" | "submit" | null | undefined = "button";
 
 	let isClicked: boolean = false;
 
@@ -40,7 +41,7 @@
 	</a>
 {:else}
 	<button
-		type="button"
+		{type}
 		class="btn {variant} {isIcon ? 'btn-icon' : ''} {isClicked ? 'btn-click' : ''}"
 		on:click
 		on:click={click}
@@ -69,6 +70,24 @@
 
 	.btn-full {
 		@apply w-full;
+	}
+	/*  */
+
+	/* btn-default */
+	.btn.btn-default {
+		@apply bg-purple-800 text-gray-50;
+	}
+
+	.btn.btn-default:hover {
+		@apply bg-purple-900;
+	}
+
+	:global(.light) .btn.btn-default {
+		@apply bg-purple-500;
+	}
+
+	:global(.light) .btn.btn-default:hover {
+		@apply bg-purple-600;
 	}
 	/*  */
 
@@ -123,6 +142,24 @@
 
 	:global(.dark) .btn.btn-outline:hover {
 		@apply bg-gray-800;
+	}
+	/*  */
+
+	/* btn-destructive */
+	.btn.btn-destructive {
+		@apply bg-red-600 text-white;
+	}
+
+	.btn.btn.btn-destructive:hover {
+		@apply bg-red-700;
+	}
+
+	:global(.light) .btn.btn-destructive {
+		@apply bg-red-500;
+	}
+
+	:global(.light) .btn.btn.btn-destructive:hover {
+		@apply bg-red-600;
 	}
 	/*  */
 </style>
