@@ -20,7 +20,7 @@
 </script>
 
 <input
-	type="text"
+	type={type === "number" ? "text" : type}
 	{name}
 	{id}
 	autocomplete={isAutocomplete ? "on" : "off"}

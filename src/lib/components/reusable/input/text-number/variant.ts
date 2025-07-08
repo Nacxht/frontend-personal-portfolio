@@ -1,4 +1,5 @@
 export enum TextNumberVariant {
-    TEXT = "text",
-    NUMBER = "number"
+	TEXT = "text",
+	NUMBER = "number",
+	EMAIL = "email"
 }
